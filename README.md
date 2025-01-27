@@ -66,3 +66,55 @@ Once you detected a fails positive, note down the **GID/SID** which would look l
 
 ## Enable IPS
 
+To enable the prevention system we will need to configure SID Rule lists.
+
+1. Click **Services**
+2. Click **Suricata**
+3. Click **SID Mgmt** tab
+4. Enable **Enable Automatic SID State Management**
+
+**disabled** will completely ignore the rule and will not conduct any matching.
+**enabled** will conduct matching and will create alerts.
+**drop** will block the matched rule.
+
+1. Right of **disablesid-sample.conf** click the **pencel icon** to edit
+2. Clear the contents
+3. Add all your fails flags alerts SIDs with a note to know what each SIDs are.
+
+        #Synology Quick Connect
+        1:2027757
+4. Click **Save**
+5. Right of **disablesid-sample.conf** click the **pencel icon** to edit
+6. Clear the contents
+7. Add all the specific categories list you desire and SIDs you want to block
+
+        # Note: This file is used to specify what rules you wish to be set to have
+        # an action of drop rather than alert.
+
+        #specific categories
+        emerging-3coresec
+        emerging-ciarmy
+        emerging-compromised
+        emerging-current_events
+        emerging-drop
+        emerging-dshield
+        emerging-dns
+        emerging-botcc
+        emerging-malware
+        emerging-tor
+        emerging-trojan
+        emerging-scan
+        feodotracker
+        sslblacklist_tls_cert
+
+        #flooded with SURICATA QUIC failed decrypt
+        1:2231000
+
+8. Click **Save**
+9. Under **Interface SID Management List Assignments** assigned the proper list for each interface.
+10. For **SID State Order** select **Disable, Enable**
+11. For **Enable SID List** select **enablesid-sample.conf**
+12. For **Disable SID List** select **disablesid-sample.conf**
+13. For **Drop SID List** select **dropsid-sample.conf**
+14. Under **Rebuild** select all the interfaces**
+15. Click **Save**<br /><img src="https://github.com/4LifeStrategy/Intrusion-Detection-and-Prevention-System/blob/e6bf96c2a29723dfd1853c700e06778f13c23105/Suricata%20SID%20Mgmt.png" width="500">
