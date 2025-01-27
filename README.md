@@ -115,6 +115,6 @@ To enable the prevention system we will need to configure SID Rule lists.
 10. For **SID State Order** select **Disable, Enable**
 11. For **Enable SID List** select **enablesid-sample.conf**
 12. For **Disable SID List** select **disablesid-sample.conf**
-13. For **Drop SID List** select **dropsid-sample.conf**
+13. For **Drop SID List** select **dropsid-sample.conf**<br /><img src="https://github.com/4LifeStrategy/Intrusion-Detection-and-Prevention-System/blob/e6bf96c2a29723dfd1853c700e06778f13c23105/Suricata%20SID%20Mgmt.png" width="500">
 14. Under **Rebuild** select all the interfaces**
-15. Click **Save**<br /><img src="https://github.com/4LifeStrategy/Intrusion-Detection-and-Prevention-System/blob/e6bf96c2a29723dfd1853c700e06778f13c23105/Suricata%20SID%20Mgmt.png" width="500">
+15. Click **Save**
