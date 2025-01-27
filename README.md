@@ -60,7 +60,7 @@ Once pfSense complete Suricata installation we can enable the package and perfor
 
 Currently we only setup up the IDS section of Suricata. It is recommended that you check the **Alert** tab for a couple of days to analyze the traffic and attempt to identify fails positives. You will have to Select the interface to view the logs. 
 
-<img src="https://github.com/4LifeStrategy/Intrusion-Detection-and-Prevention-System/blob/f574fa2e3d9f3cb10df00f079e3503b17120e1b3/Suricata%20Global%20Setting_2.png" width="500">
+<img src="https://github.com/4LifeStrategy/Intrusion-Detection-and-Prevention-System/blob/64900f9c7643b41ab8047244df51dc462c0541f2/Suricata%20Alerts.png" width="500">
 
 Once you detected a fails positive, note down the **GID/SID** which would look like **1:2221010**. We will need these SIDs to add them to our list to allow the traffic or else it will be blocked causing the effect service not to function.
 
