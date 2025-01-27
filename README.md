@@ -5,8 +5,12 @@
 
 ## Description
 
-**IDS/IPS** is intrusion detection & prevention system to detect malicious activities block the data traffic.
+**IDS/IPS** is intrusion detection & prevention system to detect malicious activities block the data traffic that passes through the pfSense firewall using Serucata.
 
 ## Project Scope
 
 **Objective**: Implement IDS and IPS functionalities in a pfSense firewall using Serucata. Configured and managed enable, disable, and drop signature ID lists to monitor and block malicious network activity.
+
+## Installation
+
+## Initial Setup
